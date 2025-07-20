@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { getImagePath } from "../../../next.config";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import {
@@ -116,7 +117,7 @@ function RenderCarousel({ projects }: Props) {
                                 height={40}
                                 alt="github logo"
                                 className="hover:-translate-y-1 duration-800 hover:filter hover:drop-shadow-[0_0_10px_white]"
-                                src="/github-logo.png"
+                                src={getImagePath("/github-logo.png")}
                               ></Image>
                             </a>
                             <a href={project.demoLink}>

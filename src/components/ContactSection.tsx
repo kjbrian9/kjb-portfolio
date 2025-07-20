@@ -1,5 +1,6 @@
 import { Button } from "./ui/button";
 import Image from "next/image";
+import { getImagePath } from "../../next.config";
 import { Card, CardContent, CardTitle } from "./ui/card";
 import { Input } from "@/components/ui/input";
 
@@ -64,7 +65,7 @@ function ContactSection() {
                   width={40}
                   height={40}
                   alt="location logo"
-                  src="/LocationLogo.svg"
+                  src={getImagePath("/LocationLogo.svg")}
                   className="invert dark:invert-0"
                 ></Image>
                 <p className="text-2xl font-bold">Košice, Slovakia</p>
@@ -81,7 +82,7 @@ function ContactSection() {
                 height={50}
                 alt="github logo"
                 className="invert dark:invert-0 hover:-translate-y-1 duration-800 hover:filter hover:drop-shadow-[0_0_10px_white]"
-                src="/github-logo.png"
+                src={getImagePath("/github-logo.png")}
               ></Image>
             </a>
             <a
@@ -93,7 +94,7 @@ function ContactSection() {
                 height={50}
                 alt="github logo"
                 className="hover:-translate-y-1 duration-800 hover:filter hover:drop-shadow-[0_0_10px_white]"
-                src="/linkedin-logo.webp"
+                src={getImagePath("/linkedin-logo.webp")}
               ></Image>
             </a>
           </div>

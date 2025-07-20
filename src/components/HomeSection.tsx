@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { getImagePath } from "../../next.config";
 
 function HomeSection() {
   return (
@@ -10,7 +11,7 @@ function HomeSection() {
         <div>
           <Image
             className="rounded-full aspect-square"
-            src="/meDark.jpg"
+            src={getImagePath("/meDark.jpg")}
             alt="a picture about me"
             width={350}
             height={300}
@@ -52,7 +53,7 @@ function HomeSection() {
                   height={50}
                   alt="github logo"
                   className="invert dark:invert-0 hover:-translate-y-1 duration-800 hover:filter hover:drop-shadow-[0_0_10px_white]  rotate-x-50 rotate-z-45 relative"
-                  src="/github-logo.png"
+                  src={getImagePath("/github-logo.png")}
                 ></Image>
                 <div className="invert dark:invert-0 w-12 h-12 rounded-full bg-white rotate-x-50 rotate-z-45 opacity-40 absolute top-2 pointer-events-none "></div>
               </a>
@@ -67,7 +68,7 @@ function HomeSection() {
                   height={50}
                   alt="github logo"
                   className="hover:-translate-y-1 duration-800 hover:filter hover:drop-shadow-[0_0_10px_white]  rotate-x-50 rotate-z-45 "
-                  src="/linkedin-logo.webp"
+                  src={getImagePath("/linkedin-logo.webp")}
                 ></Image>
                 <div className="w-12 h-12 rounded-md bg-blue-500 rotate-x-50 rotate-z-45 opacity-30 absolute top-2 pointer-events-none"></div>
               </a>
