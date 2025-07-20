@@ -39,8 +39,8 @@ interface Props {
 
 function RenderCarousel({ projects }: Props) {
   const [api, setApi] = React.useState<CarouselApi>();
-  const [current, setCurrent] = React.useState(0);
-  const [count, setCount] = React.useState(0);
+  const [, setCurrent] = React.useState(0);
+  const [, setCount] = React.useState(0);
 
   React.useEffect(() => {
     if (!api) {
@@ -99,8 +99,12 @@ function RenderCarousel({ projects }: Props) {
                             {project.description}
                           </p>
                           <div className="xl:self-end">
-                            {project.tools.map((tool) => (
-                              <Badge variant="secondary" className="ml-3">
+                            {project.tools.map((tool, idx) => (
+                              <Badge
+                                key={tool + idx}
+                                variant="secondary"
+                                className="ml-3"
+                              >
                                 {tool}
                               </Badge>
                             ))}

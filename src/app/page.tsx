@@ -1,45 +1,12 @@
 "use client";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import { Progress } from "@/components/ui/progress";
-import { Montserrat } from "next/font/google";
 
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-import {
-  Card,
-  CardAction,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import {
-  Drawer,
-  DrawerClose,
-  DrawerContent,
-  DrawerDescription,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerTitle,
-  DrawerTrigger,
-} from "@/components/ui/drawer";
 import Header from "@/components/header";
-import { type CarouselApi } from "@/components/ui/carousel";
 import React from "react";
 import HomeSection from "@/components/HomeSection";
 import AboutSection from "@/components/AboutSection";
-import { Badge } from "@/components/ui/badge";
 import ProjectSection from "@/components/ProjectSection";
 import ContactSection from "@/components/ContactSection";
-import { promises as fs } from "fs";
-import RenderCarousel from "@/components/ui/RenderCarousel";
 
 export default function Home() {
   return (

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Card } from "./ui/card";
 
 function HomeSection() {
   return (
@@ -34,11 +33,12 @@ function HomeSection() {
                     in software development
                   </p>
                   <p className="text-center xl:text-left w-80 xl:w-190 pt-1 font-normal text-base font-[family-name:var(--font-inter)] dark:text-muted-foreground ">
-                    I have a Bachelor's degree in Computer Science. I started
-                    out programming in C#, and over time I discovered a passion
-                    for building web applications with React and JavaScript.
-                    These days, I'm focused on creating modern, responsive UIs
-                    using TypeScript, React, Tailwind CSS, and Next.js.
+                    I have a Bachelor&lsquo;s degree in Computer Science. I
+                    started out programming in C#, and over time I discovered a
+                    passion for building web applications with React and
+                    JavaScript. These days, I&lsquo;m focused on creating
+                    modern, responsive UIs using TypeScript, React, Tailwind
+                    CSS, and Next.js.
                   </p>
                 </div>
               </div>

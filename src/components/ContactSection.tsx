@@ -1,14 +1,6 @@
 import { Button } from "./ui/button";
 import Image from "next/image";
-import {
-  Card,
-  CardAction,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "./ui/card";
+import { Card, CardContent, CardTitle } from "./ui/card";
 import { Input } from "@/components/ui/input";
 
 function ContactSection() {
