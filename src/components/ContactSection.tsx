@@ -1,6 +1,6 @@
 import { Button } from "./ui/button";
 import Image from "next/image";
-import { getImagePath } from "../../next.config";
+import { getImagePath } from "../lib/imagePath";
 import { Card, CardContent, CardTitle } from "./ui/card";
 import { Input } from "@/components/ui/input";
 

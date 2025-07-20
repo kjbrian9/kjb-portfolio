@@ -13,8 +13,4 @@ const nextConfig: NextConfig = {
   },
 };
 
-export function getImagePath(src: string) {
-  return isProd ? `/${repoName}${src}` : src;
-}
-
 export default nextConfig;

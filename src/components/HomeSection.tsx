@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { getImagePath } from "../../next.config";
+import { getImagePath } from "../lib/imagePath";
 
 function HomeSection() {
   return (

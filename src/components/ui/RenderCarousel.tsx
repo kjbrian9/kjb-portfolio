@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { getImagePath } from "../../../next.config";
+import { getImagePath } from "../../lib/imagePath";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import {
