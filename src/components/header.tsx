@@ -13,11 +13,11 @@ function scrollTo(id: string) {
 function Header() {
   return (
     <div
-      className="flex flex-row w-full items-center justify-end fixed bg-[var(--headerbg)] h-20 top-0 backdrop-blur-sm shadow-black-2xl xl:pr-10"
+      className="z-10 flex flex-row w-full items-center justify-center md:justify-end fixed bg-[var(--headerbg)] h-20 top-0 backdrop-blur-sm shadow-black-2xl md:pr-10"
       id="header "
     >
       <NavigationMenu>
-        <NavigationMenuList>
+        <NavigationMenuList className="gap-0">
           <NavigationMenuItem>
             <NavigationMenuTrigger
               onClick={() => {

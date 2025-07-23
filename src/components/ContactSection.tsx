@@ -12,7 +12,7 @@ function ContactSection() {
     >
       <p className="text-6xl">Contacts</p>
       <div className="flex flex-col xl:flex-row xl:gap-10 mb-5  items-center xl:items-start">
-        <Card className="w-100 mb-10 xl:w-120">
+        <Card className="w-90 mb-10 xl:w-120">
           <CardTitle className="self-center text-3xl font-[family-name:var(--font-montserrat)] font-bold">
             Contact me
           </CardTitle>

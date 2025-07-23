@@ -57,25 +57,25 @@ function RenderCarousel({ projects }: Props) {
   }, [api]);
 
   return (
-    <div className="w-90 xl:w-260 self-center">
+    <div className="w-70 h-auto md:w-150 xl:w-260 self-center">
       <Carousel setApi={setApi}>
         <CarouselContent className="h-100 xl:h-130">
           {projects.map((project) => (
             <CarouselItem
-              className="flex justify-center items-center flex-col"
+              className="flex justify-center items-center flex-col p-0"
               key={project.id}
             >
               <div className="flex flex-row items-center justify-between">
                 <CardTitle className="ml-5 xl:text-2xl font-[family-name:var(--font-montserrat)] font-bold"></CardTitle>
                 <Drawer>
-                  <DrawerTrigger className="hover:opacity-70 transition-opacity:0.5">
+                  <DrawerTrigger className="w-full h-auto hover:opacity-70 transition-opacity:0.5 ">
                     <Image
                       src={project.image}
                       alt="personal project image"
                       width={900}
                       height={900}
                       layout="fixed"
-                      className="self-center max-h-600 "
+                      className="max-h-600 "
                     ></Image>
                   </DrawerTrigger>
                   <DrawerContent className="h-500">
@@ -93,10 +93,10 @@ function RenderCarousel({ projects }: Props) {
                           width={600}
                           height={600}
                           layout="fixed"
-                          className="w-100 xl:w-auto self-center max-h-600"
+                          className="w-90 xl:w-150 self-center max-h-600"
                         ></Image>
                         <div className="w-full xl:w-100 self-end flex flex-col xl:mr-20 justify-center content-center items-center xl:gap-3">
-                          <p className="w-100 break-all text-xs xl:text-base">
+                          <p className="pr-5 pl-5 xl:pr-10 xl:pl-10 w-100 break-all text-xs xl:text-base">
                             {project.description}
                           </p>
                           <div className="xl:self-end">
@@ -144,7 +144,7 @@ function RenderCarousel({ projects }: Props) {
         <CarouselNext />
       </Carousel>
 
-      <Progress value={33 * ((api?.selectedScrollSnap() ?? 0) + 1)}></Progress>
+      <Progress value={20 * ((api?.selectedScrollSnap() ?? 0) + 1)}></Progress>
     </div>
   );
 }

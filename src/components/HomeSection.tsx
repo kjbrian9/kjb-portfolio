@@ -13,8 +13,8 @@ function HomeSection() {
             className="rounded-full aspect-square"
             src={getImagePath("/meDark.jpg")}
             alt="a picture about me"
-            width={350}
-            height={300}
+            width={330}
+            height={330}
             priority
           ></Image>
         </div>
@@ -29,11 +29,11 @@ function HomeSection() {
                   <div className="bg-[var(--slope)] w-5 h-10 animate-LoadInS"></div>
                 </div>
                 <div className="flex flex-col content-center items-center ">
-                  <p className="text-center xl:text-left text-foreground text-xl font-medium pt-1 xl:w-190 mb-3 pb-5 border-b-1">
+                  <p className="pl-20 pr-20 xl:p-0 text-center xl:text-left text-foreground text-xl font-medium pt-1 xl:w-190 mb-3 pb-5 border-b-1">
                     Computer Science Graduate, seeking entry-level opportunities
                     in software development
                   </p>
-                  <p className="text-center xl:text-left w-80 xl:w-190 pt-1 font-normal text-base font-[family-name:var(--font-inter)] dark:text-muted-foreground ">
+                  <p className="text-center xl:text-left w-80 md:w-140 xl:w-190 pt-1 font-normal text-base font-[family-name:var(--font-inter)] dark:text-muted-foreground ">
                     I have a Bachelor&lsquo;s degree in Computer Science. I
                     started out programming in C#, and over time I discovered a
                     passion for building web applications with React and

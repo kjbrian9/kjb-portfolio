@@ -18,9 +18,9 @@ function AboutSection() {
             <div className="bg-[var(--slope)] w-5 h-10 animate-LoadInS"></div>
           </div>
           <div className="flex flex-col gap-5 mt-10 ">
-            <Card className="w-110 xl:w-130 h-120 hover:scale-105 duration-2000 -translate-y-5 animate-MoveInL">
-              <CardContent className="flex flex-col">
-                <p className="mb-2 text-3xl font-[family-name:var(--font-montserrat)] font-bold">
+            <Card className="w-90 xl:w-130  xl:h-120 hover:scale-105 duration-2000 -translate-y-5 animate-MoveInL">
+              <CardContent className="flex flex-col items-center md:items-start">
+                <p className="mb-2 text-2xl xl:text-3xl font-[family-name:var(--font-montserrat)] font-bold">
                   CAREER OBJECTIVE
                 </p>
                 <p className="dark:font-thin pb-3 border-b-1">
@@ -94,7 +94,7 @@ function AboutSection() {
                 </p>
               </CardContent>
             </Card>
-            <Card className="w-110 xl:w-130  animate-MoveInL">
+            <Card className="w-90 xl:w-130  animate-MoveInL">
               <CardContent>
                 <p className="text-3xl mb-2 font-[family-name:var(--font-montserrat)] font-bold">
                   Languages
@@ -110,7 +110,7 @@ function AboutSection() {
             <p className="text-3xl font-[family-name:var(--font-montserrat)] font-bold self-center xl:self-start">
               EDUCATION
             </p>
-            <Card className="w-110 xl:w-150 animate-MoveInR">
+            <Card className="w-90 xl:w-150 animate-MoveInR">
               <CardContent>
                 <div>
                   <p className="text-xl font-semibold">
@@ -132,7 +132,7 @@ function AboutSection() {
                 </div>
               </CardContent>
             </Card>
-            <Card className="w-110 xl:w-150 mb-10 animate-MoveInR">
+            <Card className="w-90 xl:w-150 mb-10 animate-MoveInR">
               <CardContent className="p-0">
                 <div>
                   <p className="text-xl font-semibold">
