@@ -1,6 +1,4 @@
 "use client";
-import Image from "next/image";
-import { getImagePath } from "../lib/imagePath";
 
 import Header from "@/components/header";
 import React from "react";
