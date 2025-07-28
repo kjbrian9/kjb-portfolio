@@ -7,7 +7,7 @@ function ContactSection() {
       id="contacts"
       className="flex min-h-screen flex-col w-full items-center justify-center gap-20 "
     >
-      <p className="text-8xl animate-pulsing">Contacts</p>
+      <p className="text-6xl xl:text-8xl animate-pulsing">Contacts</p>
 
       <div className="flex flex-col xl:gap-10 mb-5 ">
         <div className="flex flex-col gap-5 items-center xl:items-start ">
@@ -21,7 +21,7 @@ function ContactSection() {
             ></Image>
             <a
               href="mailto:brian.julius.k@gmail.com"
-              className="text-2xl font-bold ml-2"
+              className="text-xl md:text-2xl font-bold ml-2"
             >
               brian.julius.k@gmail.com
             </a>
@@ -34,7 +34,7 @@ function ContactSection() {
               src={getImagePath("/LocationLogo.svg")}
               className="invert dark:invert-0"
             ></Image>
-            <p className="text-2xl font-bold"> Košice, Slovakia</p>
+            <p className="text-xl md:text-2xl font-bold"> Košice, Slovakia</p>
           </div>
 
           <div className="flex flex-row gap-4 justify-center w-full  order-first  ">
