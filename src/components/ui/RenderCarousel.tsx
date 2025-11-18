@@ -96,10 +96,10 @@ function RenderCarousel({ projects }: Props) {
                           className="w-90 xl:w-150 self-center max-h-600"
                         ></Image>
                         <div className="w-full xl:w-100 self-end flex flex-col xl:mr-20 justify-center content-center items-center xl:gap-3">
-                          <p className="pr-5 pl-5 xl:pr-10 xl:pl-10 w-100 break-all text-xs xl:text-base">
+                          <p className="pr-5 pl-5 xl:pr-10 xl:pl-10 w-120 break-all text-xs xl:text-base">
                             {project.description}
                           </p>
-                          <div className="xl:self-end">
+                          <div className="xl:self-end pt-5">
                             {project.tools.map((tool, idx) => (
                               <Badge
                                 key={tool + idx}
